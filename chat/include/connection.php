@@ -1,0 +1,1 @@
+<?php $conn = mysqli_connect('localhost:1234', 'root', '', 'chat'); ?>
