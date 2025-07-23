@@ -10,10 +10,6 @@
     $receive_request_query = mysqli_query($conn, "SELECT * FROM add_requests WHERE (req_from = '$number' AND is_friend = 'yes') OR (req_to = '$number' AND is_friend = 'yes')");
     $has_request = mysqli_num_rows($receive_request_query);
 
-    // $send_request_query = mysqli_query($conn, "SELECT * FROM add_requests WHERE ");
-    // $has_send_request = mysqli_num_rows($send_request_query);
-    // $send_request = mysqli_fetch_assoc($send_request_query);
-
     if(isset($_POST['save']))
     {
         $name = mysqli_real_escape_string($conn, $_POST['name']);
